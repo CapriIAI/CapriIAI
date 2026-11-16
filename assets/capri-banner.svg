@@ -1,17 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101820"/><stop offset="1" stop-color="#1c2430"/></linearGradient>
-    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7de2d1"/><stop offset="1" stop-color="#f3a078"/></linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090d12"/><stop offset=".58" stop-color="#111923"/><stop offset="1" stop-color="#21131d"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#69f0d2"/><stop offset=".55" stop-color="#78bfff"/><stop offset="1" stop-color="#fb4f9b"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#54e6cf" stop-opacity=".16"/><stop offset="1" stop-color="#54e6cf" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#a8d7e5" stroke-opacity=".045" stroke-width="1"/></pattern>
   </defs>
-  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
-  <path d="M0 278 190 210l125 48 170-104 155 94 174-133 162 106 224-120v259H0Z" fill="#18212a"/>
-  <path d="M0 300 180 250l115 35 196-104 147 91 172-133 165 101 225-106" fill="none" stroke="url(#glow)" stroke-opacity=".56" stroke-width="2"/>
-  <g fill="none" stroke="#7de2d1" stroke-opacity=".28">
-    <path d="M760 0v86h68v65h92v59h83v57h197"/><path d="M1000 0v42h-70v70h-65v62h-90v75h-74"/>
-    <circle cx="760" cy="86" r="4" fill="#7de2d1"/><circle cx="1000" cy="42" r="4" fill="#7de2d1"/>
+  <rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="22" fill="url(#grid)"/>
+  <ellipse cx="900" cy="180" rx="380" ry="260" fill="url(#halo)"/>
+  <path d="M0 278 138 245l90 21 117-74 92 45 136-117 108 84 124-48 109 26 132-92 154 42v228H0Z" fill="#0c1219" fill-opacity=".78"/>
+  <path d="M0 278 138 245l90 21 117-74 92 45 136-117 108 84 124-48 109 26 132-92 154 42" fill="none" stroke="url(#line)" stroke-opacity=".62" stroke-width="2"/>
+  <g fill="none" stroke="url(#line)" stroke-opacity=".34" stroke-width="1.5">
+    <path d="M754 0v58h86v57h64v55h91v71h105"/><path d="M1080 0v46h-60v57h-86v48h-76v72h-90"/>
+    <circle cx="754" cy="58" r="3" fill="#69f0d2"/><circle cx="1080" cy="46" r="3" fill="#fb4f9b"/>
   </g>
-  <g fill="#f3a078" opacity=".8"><circle cx="1034" cy="74" r="2"/><circle cx="1092" cy="190" r="2"/><circle cx="882" cy="46" r="2"/><circle cx="1138" cy="118" r="2"/></g>
-  <text x="86" y="139" fill="#f4f1ea" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="600" letter-spacing="3">CAPRI</text>
-  <text x="90" y="181" fill="#aebac3" font-family="Segoe UI, Arial, sans-serif" font-size="17" letter-spacing="3">LOCAL DESKTOP COMPANION · EM CONSTRUÇÃO</text>
-  <path d="M90 208h110" stroke="url(#glow)" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#f5f7fb" opacity=".8"><circle cx="944" cy="47" r="1.4"/><circle cx="1125" cy="208" r="1.2"/><circle cx="846" cy="302" r="1.3"/><circle cx="1040" cy="300" r="1.2"/></g>
+  <text x="86" y="143" fill="#f0f3f5" font-family="Segoe UI, Arial, sans-serif" font-size="68" font-weight="600" letter-spacing="10">CAPRI</text>
+  <text x="91" y="184" fill="#a8b6c3" font-family="Consolas, monospace" font-size="16" letter-spacing="3">RUST  /  SYSTEMS  /  TOOLING</text>
+  <path d="M91 211h108" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+  <text x="91" y="244" fill="#7f8e9b" font-family="Consolas, monospace" font-size="12" letter-spacing="2">NO NOISE. JUST SIGNAL.</text>
 </svg>
